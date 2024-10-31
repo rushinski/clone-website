@@ -18,6 +18,10 @@ h2 {
   font-size: 45px;
 }
 
+p {
+  color: #777;
+}
+
 /* Main header code */
 .main-header {
   width: 100%;
@@ -211,10 +215,11 @@ h2 {
   margin-bottom: 15px;
 }
 
-.moto-quote {
+.moto-quote p {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  line-height: 25px;
 }
 
 .how-it-works {
@@ -262,5 +267,76 @@ h2 {
   display: flex;
   text-align: center;
   line-height: 25px;
-  color: #777;
+}
+
+/* Properties */
+.header-prop {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.prev-next {
+  display: flex;
+  margin-left: auto;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-between;
+  width: 165px;
+  font-weight: 300;
+  margin-top: auto;
+}
+
+.prev-next button {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.prev-next button {
+  background-color: white;
+  border: none;
+}
+
+.properties-content {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+
+.properties-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.prop-image {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.prop-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.prop-price h3 {
+  color: #343a40;
+}
+
+.prop-des p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#view-all-btn {
+  background-color: orange;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 70px;
+  color: white;
+  font-size: 15px;
+  margin-left: 400px;
+  cursor: pointer;
 }
