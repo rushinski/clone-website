@@ -9,6 +9,15 @@ body {
   padding-top: 155px; 
 }
 
+.container {
+  padding: 50px 200px;
+}
+
+h2 {
+  color: orange;
+  font-size: 45px;
+}
+
 /* Main header code */
 .main-header {
   width: 100%;
@@ -206,4 +215,52 @@ body {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+}
+
+.how-it-works {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.how-info {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.how-data {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.ion-icon-how {
+  display: flex;
+  justify-content: center;
+  color: orange;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-right: 3px;
+}
+
+.h3-how {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.p-how {
+  display: flex;
+  text-align: center;
+  line-height: 25px;
+  color: #777;
 }
