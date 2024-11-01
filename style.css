@@ -7,15 +7,22 @@
 
 body {
   padding-top: 155px; 
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
   padding: 50px 200px;
 }
 
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 h2 {
   color: orange;
   font-size: 45px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 p {
@@ -105,7 +112,7 @@ p {
   margin-top: 1px;
   height: 24px;
   color: white;
-  font-size: 9px;
+  font-size: 17px;
 }
 
 .btn-row-header-container {
@@ -217,11 +224,11 @@ p {
 
 .moto-quote p {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 25px;
 }
 
+/* How it works section */
 .how-it-works {
   background-color: #f8f9fa;
   display: flex;
@@ -231,13 +238,12 @@ p {
 .center-h2 {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
 }
 
 .how-info {
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -272,7 +278,6 @@ p {
 /* Properties */
 .header-prop {
   display: flex;
-  margin-bottom: 40px;
 }
 
 .prev-next {
@@ -319,6 +324,7 @@ p {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  margin-top: 10px;
 }
 
 .prop-price h3 {
@@ -339,4 +345,66 @@ p {
   font-size: 15px;
   margin-left: 400px;
   cursor: pointer;
+}
+
+/* Realtors */
+#realtors-text {
+  font-size: 20px;
+  display: flex;
+  width: 50%;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+
+.realtor-box-container {
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.realtor-box-row {
+  display: flex;
+  height: 46%;
+  justify-content: space-between;
+}
+
+.realtor-box-ind {
+  display: flex;
+  width: 32%;
+  background-color: #f0f0f0;
+}
+
+.realtor-info-split {
+  display: flex;
+  width: 50%;
+}
+
+.realtor-image-box {
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+.realtor-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.real-info-contain {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.real-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.real-desc {
+  font-size: 14px;
+  margin-top: 4px;
 }
