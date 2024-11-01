@@ -91,6 +91,8 @@ p {
   justify-content: center;
   padding: 0px 5px;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 #follow-font {
@@ -123,6 +125,10 @@ p {
   margin: auto 0;
 }
 
+.btn-row-header-container a {
+  text-decoration: none;
+}
+
 .btn-header {
   display: flex;
   justify-content: center;
@@ -148,6 +154,7 @@ p {
 }
 
 .winner {
+  color: black;
   background-color: hsl(139.41, 58.62%, 54.51%);
 }
 
