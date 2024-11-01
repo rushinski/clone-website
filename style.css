@@ -348,12 +348,15 @@ p {
 }
 
 /* Realtors */
+.agents {
+  border-bottom: 1px solid #ccc;
+}
+
 #realtors-text {
   font-size: 20px;
   display: flex;
   width: 50%;
   line-height: 32px;
-  margin-bottom: 50px;
 }
 
 .realtor-box-container {
@@ -361,6 +364,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 60px 0px 80px 0px;
 }
 
 .realtor-box-row {
@@ -408,3 +412,58 @@ p {
   font-size: 14px;
   margin-top: 4px;
 }
+
+/* We are the best */
+.flex-con {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-split {
+  width: 47%;  
+}
+
+.img-box {
+  overflow: hidden;
+  height: 650px;
+}
+
+.best-split img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.large-p {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.small-p {
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.best-list {
+  margin-left: 30px;
+  color: #777;
+  font-size: 15px;
+  line-height: 2;
+  margin-top: 15px;
+}
+
+.learn-more-btn {
+  background-color: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+/* Services section */
