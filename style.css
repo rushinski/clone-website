@@ -567,7 +567,7 @@ p {
   display: flex;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .image-circle-cont {
@@ -586,4 +586,87 @@ p {
 
 .person p {
   font-size: 18px;
+}
+
+/* contact us */
+.contact-us {
+  background-color: #f8f9fa;
+}
+
+.contact-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-box {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+}
+
+.one {
+  width: 55%;
+  padding: 40px;
+}
+
+.two {
+  width: 40%;
+  height: fit-content;
+  line-height: 25px;
+  padding: 20px;
+}
+
+.p-size-1 {
+  font-size: 17px;
+}
+
+.two a {
+  text-decoration: none;
+  color: orange;
+}
+
+.two a:hover {
+  text-decoration: underline;
+}
+
+.h3-contact-form {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.text-box {
+  width: auto;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: .5px solid;
+  font-size: 20px;
+  outline: none;
+}
+
+.one label {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.one textarea {
+  height: 140px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 1px solid;
+  outline: none;
+}
+
+.one button {
+  margin-top: 30px;
+  background-color: orange;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 15px 20px;
+  width: 150px;
+  font-size: 15px;
 }
