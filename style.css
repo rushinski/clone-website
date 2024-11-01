@@ -294,9 +294,7 @@ p {
 .prev-next button {
   font-size: 16px;
   letter-spacing: 1px;
-}
-
-.prev-next button {
+  cursor: pointer;
   background-color: white;
   border: none;
 }
@@ -669,4 +667,144 @@ p {
   padding: 15px 20px;
   width: 150px;
   font-size: 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  padding: 140px 200px;
+}
+
+.footer h4 {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  display: flex;
+  border-bottom: 1px solid #777;
+  padding-bottom: 100px;
+}
+
+.footer-box {
+  display: flex;
+}
+
+.uno {
+  width: 50%;
+}
+
+.dos {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.dos a {
+  color: #777;
+  text-decoration: none;
+  line-height: 35px;
+}
+
+.dos a:hover {
+  color: white;
+}
+
+.dos h4 {
+  margin-bottom: 10px;
+}
+
+.tres {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box-break {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box-break p {
+  line-height: 25px;
+}
+
+.sub-input {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  margin: 18px 0px;
+}
+
+.text-sub {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: transparent;
+  outline: none;
+  border-right: none;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #6c757d;
+}
+
+.text-btn {
+  background-color: orange;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: none;
+  padding: 10px 25px;
+  font-size: 15px;
+}
+
+.socials {
+  margin-top: 18px;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.icons-socials {
+  color: #777;
+  font-size: 18px;
+}
+
+.icons-socials:hover {
+  color: white;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+}
+
+.trademark-cont {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+}
+
+.trademark-cont a {
+  color: #777;
+  text-decoration: none;
+}
+
+.trademark-cont a:hover {
+  color: white;
+}
+
+.heart-icon {
+  color: #777;
+  margin: 0px 2px;
+}
+
+#space {
+  margin-right: 3px;
 }
