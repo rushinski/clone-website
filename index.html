@@ -3,9 +3,427 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <title>Clone Website</title>
 </head>
 <body>
+  <div id="moving-header"></div>
+  <header class="main-header">
+    <div id="when-top-header"></div>
+    <div class="logo-container">
+      <a class="logo-fit" href="https://codepen.io/"><img src="images/logo.svg" id="logo-svg"></a>
+    </div>
+    <div class="header-main-text-container">
+      <div class="top-buttons">
+        <a href="https://codepen.io/onclickmedia" id="OnClick-text">OnClick</a>
+        <a href="https://codepen.io/login?type=follow" class="follow-button" id="follow-font">
+          <ion-icon name="add-outline" id="plus-font"></ion-icon>Follow
+        </a>
+      </div>
+      <div class="lets-code">
+        <h3>Let's Code This - Episode 3</h3>
+      </div>
+    </div>
+    <div class="btn-row-header-container">
+      <a class="btn-header default" href="https://codepen.io/login?type=love"><ion-icon name="heart" id="icon-heart"></ion-icon></a>
+      <a class="btn-header default" href="https://codepen.io/onclickmedia/pen/vqpVvX">View Source Code</a>
+      <a class="btn-header winner" href="https://codepen.io/accounts/signup/user/free">Sign Up</a>
+      <a class="btn-header default" href="https://codepen.io/login">Log in</a>
+    </div>
+  </header>
+
+  <header id="scrolling-header">
+    <div class="stated">
+      <a href="index.html"><h1>STATED.</h1></a>
+    </div>
+    <div class="nav-bar">
+      <a href="#"><li>Home</li></a>
+      <a href="#properties"><li>Properties</li></a>
+      <a href="#agents"><li>Agents</li></a>
+      <a href="#about"><li>About</li></a>
+      <a href="#news"><li>News</li></a>
+      <a href="#contact"><li>Contact</li></a>
+    </div>
+  </header>
+
+  <section class="moto">
+    <div class="moto-container">
+      <div class="moto-text">
+        <h1>Buy and sell real estate properties</h1>
+      </div>
+      <div class="moto-quote">
+        <p>Unlock opportunities in real estate: buy, sell, and invest in properties that inspire your dreams.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <div class="container">
+      <div class="center-h2">
+        <h2>How It Works</h2>
+        <div id="properties"></div>
+      </div>
+      <div class="how-info">
+        <div class="how-data">
+          <div class="ion-icon-how" style="margin-right: 5px;"><ion-icon name="home"></ion-icon></div>
+          <div class="h3-how"><p>Find a Property.</p></div>
+          <div class="p-how"><p>Find the perfect property for your needs with ease today.</p></div>
+        </div>
+        <div class="how-data">
+          <div class="ion-icon-how"><ion-icon name="cash"></ion-icon></div>
+          <div class="h3-how"><p>Buy a Property.</p></div>
+          <div class="p-how"><p>Discover your dream home today; explore our property listings now.</p></div>
+        </div>
+        <div class="how-data">
+          <div class="ion-icon-how"><ion-icon name="bar-chart"></ion-icon></div>
+          <div class="h3-how"><p>Investing.</p></div>
+          <div class="p-how"><p>Maximize your returns with smart property investments—start building wealth today.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
   
+  <section class="properties">
+    <div class="container">
+      <div class="header-prop">
+        <h2>Properties</h2>
+        <div class="prev-next">
+          <button onclick="">PREVIOUS</button>
+          <p>/</p>
+          <button onclick="">NEXT</button>
+        </div>
+      </div>
+      <div class="properties-content">
+        <div class="properties-container">
+          <div class="prop-image"><img src="images/house1.webp"></div>
+          <div class="prop-price"><h3>$1,800,000</h3></div>
+          <div class="prop-des">
+            <p>3 beds | 2 baths | 3,123 sqft.</p>
+            <p>123 Maple Street, Springfield, IL 62701, USA</p>
+          </div>
+        </div>
+        <div class="properties-container">
+          <div class="prop-image"><img src="images/house2.jpg"></div>
+          <div class="prop-price"><h3>$1,400,000</h3></div>
+          <div class="prop-des">
+            <p>3 beds | 3 baths | 3,009 sqft.</p>
+            <p>456 Oak Avenue, Chicago, IL 60614, USA</p>
+          </div>
+        </div>
+        <div class="properties-container">
+          <div class="prop-image"><img src="images/house3.jpg"></div>
+          <div class="prop-price"><h3>$1,100,000</h3></div>
+          <div class="prop-des">
+            <p>2 beds | 2 baths | 3,245 sqft.</p>
+            <p>789 Maple Street, Naperville, IL 60540, USA</p>
+          </div>
+        </div>
+        <div class="properties-container">
+          <div class="prop-image"><img src="images/house4.jpg"></div>
+          <div class="prop-price"><h3>$2,400,000</h3></div>
+          <div class="prop-des">
+            <p>4 beds | 4 baths | 3,782 sqft.</p>
+            <p>456 Oak Avenue, Evanston, IL 60201, USA</p>
+            <div id="agents"></div>
+          </div>
+        </div>
+      </div>
+      <button id="view-all-btn">View All Property Listings</button>
+    </div>
+  </section>
+
+  <section class="agents">
+    <div class="container">
+      <h2>Agents</h2>
+      <p id="realtors-text">Dedicated realtor team committed to helping clients find their dream homes with personalized service.</p>
+      <div class="realtor-box-container">
+        <div class="realtor-box-row">
+          <div class="realtor-box-ind">
+            <div class="realtor-info-split">
+              <div class="realtor-image-box">
+                <div class="real-img"><img src="images/realtor1.jpg"></div>
+              </div>
+            </div>
+            <div class="realtor-info-split">
+              <div class="real-info-contain">
+                <div class="real-name"><h3>Kaiara Spencer</h3></div>
+                <div class="real-desc"><p>Real Estate Agent</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="realtor-box-ind">
+            <div class="realtor-info-split">
+              <div class="realtor-image-box">
+                <div class="real-img"><img src="images/realtor2.jpg"></div>
+              </div>
+            </div>
+            <div class="realtor-info-split">
+              <div class="real-info-contain">
+                <div class="real-name"><h3>Dave Simpson</h3></div>
+                <div class="real-desc"><p>Real Estate Agent</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="realtor-box-ind">
+            <div class="realtor-info-split">
+              <div class="realtor-image-box">
+                <div class="real-img"><img src="images/realtor3.jpg"></div>
+              </div>
+            </div>
+            <div class="realtor-info-split">
+              <div class="real-info-contain">
+                <div class="real-name"><h3>Ben Thompson</h3></div>
+                <div class="real-desc"><p>Real Estate Agent</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="realtor-box-row">
+          <div class="realtor-box-ind">
+            <div class="realtor-info-split">
+              <div class="realtor-image-box">
+                <div class="real-img"><img src="images/realtor4.jpeg"></div>
+              </div>
+            </div>
+            <div class="realtor-info-split">
+              <div class="real-info-contain">
+                <div class="real-name"><h3>Kyla Stewart</h3></div>
+                <div class="real-desc"><p>Real Estate Agent</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="realtor-box-ind">
+            <div class="realtor-info-split">
+              <div class="realtor-image-box">
+                <div class="real-img"><img src="images/realtor5.jpg"></div>
+              </div>
+            </div>
+            <div class="realtor-info-split">
+              <div class="real-info-contain">
+                <div class="real-name"><h3>Rich Moffatt</h3></div>
+                <div class="real-desc"><p>Real Estate Agent</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="realtor-box-ind">
+            <div class="realtor-info-split">
+              <div class="realtor-image-box">
+                <div class="real-img"><img src="images/realtor6.jpg"></div>
+              </div>
+            </div>
+            <div class="realtor-info-split">
+              <div class="real-info-contain">
+                <div class="real-name"><h3>Stuart Redman</h3></div>
+                <div class="real-desc"><p>Real Estate Agent</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="about"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="the-best">
+    <div class="container flex-con">
+      <div class="best-split img-box">
+        <img src="images/happy-client.avif">
+      </div>
+      <div class="best-split">
+        <h2>We Are the Best Real Estate Company</h2>
+        <p class="large-p">Helping you navigate the journey to your new home seamlessly.</p>
+        <p class="small-p">"We are committed to 'Helping you navigate the journey to your new home seamlessly.' Our experienced team offers exceptional personalized service and expert guidance, making your buying or selling experience smooth and enjoyable."</p>
+        <ul class="best-list">
+          <li>Personalized Service: Tailored solutions for every client.</li>
+          <li>Expert Guidance: Professional advice throughout the process.</li>
+          <li>Clear Communication: Keeping clients informed at all times.</li>
+          <li>Timely Responses: Quick answers to client inquiries.</li>
+          <li>Post-Sale Support: Assistance after the transaction is complete.</li>
+        </ul>
+        <button class="learn-more-btn">Learn More</button>
+        <div id="news"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2 class="center-h2">Services</h2>
+      <div class="services-container">
+        <div class="services-row">
+          <div class="services-box">
+            <div class="services-split">
+              <ion-icon name="home" class="services-icon"></ion-icon>
+            </div>
+            <div class="services-split">
+              <div class="services-content">
+                <h3 class="h3-services">Search Property</h3>
+                <p>Begin your journey by searching for your ideal property and discover the perfect home for you today!</p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="services-box">
+            <div class="services-split">
+              <ion-icon name="cash" class="services-icon"></ion-icon>
+            </div>
+            <div class="services-split">
+              <div class="services-content">
+                <h3 class="h3-services">Buy Property</h3>
+                <p>Discover and buy your ideal property effortlessly with our expert guidance—find the place you’ll love.</p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="services-box">
+            <div class="services-split">
+              <ion-icon name="bar-chart" class="services-icon"></ion-icon>
+            </div>
+            <div class="services-split">
+              <div class="services-content">
+                <h3 class="h3-services">Investing</h3>
+                <p>Invest confidently in real estate to build wealth, maximize returns, and secure future financial stability.</p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-row">
+          <div class="services-box">
+            <div class="services-split">
+              <ion-icon name="business" class="services-icon"></ion-icon>
+            </div>
+            <div class="services-split">
+              <div class="services-content">
+                <h3 class="h3-services">List a Property</h3>
+                <p>Showcase your property with stunning photos, detailed descriptions, pricing, and nearby amenities for visibility.</p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="services-box">
+            <div class="services-split">
+              <ion-icon name="search" class="services-icon"></ion-icon>
+            </div>
+            <div class="services-split">
+              <div class="services-content">
+                <h3 class="h3-services">Property Locator</h3>
+                <p>Easily locate properties with precise search filters, interactive maps, and tailored recommendations for your needs.</p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="services-box">
+            <div class="services-split">
+              <ion-icon name="phone-portrait-outline" class="services-icon"></ion-icon>
+            </div>
+            <div class="services-split">
+              <div class="services-content">
+                <h3 class="h3-services">Stated Apps</h3>
+                <p>Discover top-rated apps to streamline real estate searches, property management, and investment insights effectively.</p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clients-say">
+    <div class="container">
+      <h2 class="center-h2 sizing">What Our Clients Are Saying</h2>
+      <div class="says-cont">
+        <div class="quote">
+          <a><p class="flex"><</p></a>
+          <div class="quote-container">
+            <i class="italic-q">"I had a fantastic experience using this site; it made finding my dream home effortless! The team was incredibly helpful and guided me every step of the way. Their knowledge and dedication truly set them apart from others in the industry."</i>
+          </div>
+          <a><p class="flex">></p></a>
+        </div>
+        <div class="person">
+          <div class="image-circle-cont">
+            <img src="images/nick.jpg">
+          </div>
+          <p>Nick Andros</p>
+          <div id="contact"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <div class="container">
+      <h2 class="center-h2">Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-box one">
+          <h3 class="h3-contact-form">Contact Form</h3>
+          <label for="name">Name</label>
+          <input type="text" id="name" class="text-box">
+          <label for="email">Email</label>
+          <input type="text" id="email" class="text-box">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" class="text-box">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message here..."></textarea>
+          <button>Send Message</button>
+        </div>
+        <div class="contact-box two">
+          <b><p class="p-size-1">Address</p></b>
+          <p>456 Oak Avenue, Lincoln Park, Chicago, IL 60614, United States</p><br>
+          <b><p class="p-size-1">Phone</p></b>
+          <a href="#">232-232-2323</a><br>
+          <b><p>Email Address</p></b>
+          <a href="#">ouremail@domain.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content">
+      <div class="footer-top">
+        <div class="footer-box uno">
+          <div class="footer-box-break">
+            <h4>About Stated</h4><br>
+            <p>Stated offers expert real estate services, helping clients buy, sell, and invest with personalized, trusted guidance for success.</p>
+          </div>
+        </div>
+        <div class="footer-box dos">
+          <h4>Quick Links</h4>
+          <a href="#"><li>About Us</li></a>
+          <a href="#"><li>Services</li></a>
+          <a href="#"><li>Testimonials</li></a>
+          <a href="#"><li>Contact Us</li></a>
+        </div>
+        <div class="footer-box tres">
+          <h4>Subscribe to out Newsletter</h4>
+          <div class="sub-input">
+            <input type="text" placeholder="Enter Email" class="text-sub">
+            <button class="text-btn">Send</button>
+          </div>
+          <h4>Follow Us</h4>
+          <div class="socials">
+            <a href="https://www.facebook.com/"><ion-icon name="logo-facebook" class="icons-socials"></ion-icon></a>
+            <a href="https://x.com/?lang=en&mx=2"><ion-icon name="logo-twitter" class="icons-socials"></ion-icon></a>
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram" class="icons-socials"></ion-icon></a>
+            <a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin" class="icons-socials"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="trademark-cont">
+          <p>Copyright © 2019 All rights reserved | This template is made with </p>
+          <ion-icon name="heart" class="heart-icon"></ion-icon>
+          <p id="space">by</p>
+          <a href="https://codepen.io/onclickmedia/full/vqpVvX">Colorlib</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
